@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/Group 1.png" alt="monblanproject logo" class="logo-img">
+        </div>
+
+        <div class="info-container">
+            <div class="name-row">
+                <h2 class="name-header">monblanproject</h2>
+                <span class="start-date-badge">Start on: 17/02/2016</span>
+            </div>
+
+            <div class="stats-row">
+                <span class="stat-item"><b>870</b> posts</span>
+                <span class="stat-item"><b>11,787</b> followers</span>
+                <span class="stat-item"><b>112</b> following</span>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Date</span>
+
+                <div class="input-group" id="fp-from-wrapper">
+                    <input type="text" id="date-from" placeholder="from" readonly>
+                    <button class="clear-btn" id="clear-from">×</button>
+                    <button class="calendar-btn" id="trigger-from">📅</button>
+                </div>
+
+                <div class="input-group" id="fp-to-wrapper">
+                    <input type="text" id="date-to" value="09_08_2016" placeholder="to" readonly>
+                    <button class="clear-btn" id="clear-to">×</button>
+                    <button class="calendar-btn" id="trigger-to">📅</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+
+
+
+
+        <main class="content-section">
+            <div class="view-toggle">
+                <button class="toggle-btn active" data-view="grid">📊</button>
+                <button class="toggle-btn" data-view="list">📋</button>
+            </div>
+
+            <div class="cards-list grid-view">
+
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-img-wrapper">
+                        <img src="./img/card-photo.jpg" alt="Post image" class="post-img">
+                    </div>
+                    <div class="post-data">
+                        <div class="data-column">
+                            <span class="date-title">Today</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">128</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column">
+                            <span class="date-title">9-08-2016</span>
+                            <div class="metrics">
+                                <button class="metric-btn like-btn">
+                                    <span class="icon">❤️</span>
+                                    <span class="count">67</span>
+                                </button>
+
+                                <button class="metric-btn comment-btn">
+                                    <span class="icon">💬</span>
+                                    <span class="count">22</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-column text-right">
+                            <span class="status-text">image upload</span>
+                            <span class="sub-date">11-04-2016</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+
+        <footer>
+
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    </div>
+</body>
+
+
+
+</html>
